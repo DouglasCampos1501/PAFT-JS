@@ -1,0 +1,26 @@
+h1{
+    padding: 10px;;
+}
+
+div{
+    margin-top: 10%;
+    padding-left: 5%;
+    padding-right: 2%;
+    padding-top: 2%;
+    width: 35%;
+    height: 400px;
+    float: left;
+    text-align: center;
+}
+
+
+#direita{
+    margin-left: 6%;
+    background-color: black;
+    float: left;
+    color: white;
+}
+#esquerda{
+    background-color: burlywood;
+    float: left;
+}
