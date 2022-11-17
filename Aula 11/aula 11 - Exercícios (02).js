@@ -1,21 +1,22 @@
 function fibonacci(){
-    var termo = parseInt(document.getElementById('numero').value);
-    var resposta = document.getElementById('resposta');
-    var penultimo=0, ultimo=1;
-    var numero;
-  
-    if(termo<=2)
-     numero = termo-1;
-    else{
-     count=3;
-     while(count<=termo){
-      numero= ultimo + penultimo;
-      penultimo = ultimo;
-      ultimo=numero;
-      count++;
-     }
-    }
-  
-    resposta.innerHTML=numero;
+  var term = parseInt(document.getElementById('numero').value);
+  var re = document.getElementById('resposta');
+  var pen=0, ult=1, a;
+  var nume='';
+
+  for(var coun=1 ; coun<=term ; coun++){
+   if(coun<=2){
+    nume += 'Termo '+coun+': ' + (coun-1) + '<br />'
+
+   }
+   else{
+    nume += 'Termo '+coun+': ' + (ult+pen) + '<br />'
+
+    a = ult;
+    ult = ult + pen;
+    pen = a;
+   }
   }
-  
+
+  re.innerHTML=nume;
+}
